@@ -1,0 +1,24 @@
+{
+  "name": "hubot-coffee-roulette",
+  "version": "1.0.0",
+  "description": "coffee",
+  "main": "coffee-roulette.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/uberall/hubot-coffee-roulette.git"
+  },
+  "author": "David and Phil",
+  "license": "Beer",
+  "bugs": {
+    "url": "https://github.com/uberall/hubot-coffee-roulette/issues"
+  },
+  "homepage": "https://github.com/uberall/hubot-coffee-roulette",
+  "devDependencies": {
+    "cron": "^1.0.9",
+    "gulp": "^3.8.11",
+    "gulp-bundle-assets": "^2.19.0"
+  }
+}
