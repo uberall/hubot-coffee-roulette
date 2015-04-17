@@ -68,12 +68,6 @@ module.exports = function(robot) {
         }, null, true, "Europe/Paris");
     }
 
-    // for (var i = 0; i < times.length; i++) {
-        new CronJob("00 * * * * *", function() {
-            announceAndMatch();
-        }, null, true, "Europe/Paris");
-    // }
-
     function matchUsers() {
         var users = robot.brain.get("usersWhoWantCoffee");
 
