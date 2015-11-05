@@ -1,6 +1,6 @@
 {
   "name": "hubot-coffee-roulette",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "An Hubot script that is doing random coffee rounds at 10am, 2pm, and 4pm",
   "main": "coffee-roulette.js",
   "scripts": {

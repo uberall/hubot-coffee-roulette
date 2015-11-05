@@ -11,7 +11,7 @@ module.exports = function(robot) {
 
     robot.messageRoom(room, "I am here to serve your coffee needs!");
 
-    robot.hear(/coffee/i, function(response) {
+    robot.respond(/coffee/i, function(response) {
         response.reply("You have been added to the coffee queue. Finding a partner! \r\n Say 'no coffee' to remove yourself from the list.");
 
         var user = response.message.user;
@@ -19,7 +19,7 @@ module.exports = function(robot) {
         robot.emit("userWantsCoffee", user);
     });
 
-    robot.hear(/no coffee/i, function(response) {
+    robot.respond(/no coffee/i, function(response) {
         response.reply("You have been removed from the coffee queue. Boooo!");
 
         var user = response.message.user;
@@ -56,7 +56,7 @@ module.exports = function(robot) {
     }
 
     function announceUpcomingCoffeeSelection() {
-        robot.messageRoom(room, "Want coffee? say 'coffee'. Roulette will start in 5 minutes.");
+        robot.messageRoom(room, "Want coffee? Tell me with '@uberbot coffee'. Roulette will start in 5 minutes.");
     }
 
     var times = [10, 14, 16];
