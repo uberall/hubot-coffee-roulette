@@ -16,9 +16,8 @@
     "url": "https://github.com/uberall/hubot-coffee-roulette/issues"
   },
   "homepage": "https://github.com/uberall/hubot-coffee-roulette",
-  "devDependencies": {
+  "dependencies": {
     "cron": "^1.0.9",
-    "gulp": "^3.8.11",
-    "gulp-bundle-assets": "^2.19.0"
+    "lodash": "^3.10.1"
   }
 }

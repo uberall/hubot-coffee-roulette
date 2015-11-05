@@ -5,9 +5,12 @@
 var CronJob = require("cron").CronJob;
 var _ = require("lodash");
 
-var room = "5517a07511089312000fd436";
+var room = "#coffee";
 
 module.exports = function(robot) {
+
+    robot.messageRoom(room, "I am here to serve your coffee needs!");
+
     robot.hear(/coffee/i, function(response) {
         response.reply("You have been added to the coffee queue. Finding a partner! \r\n Say 'no coffee' to remove yourself from the list.");
 
